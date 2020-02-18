@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-500dp"
+        app:srcCompat="@drawable/bgtop1" />
+
+    <TextView
+        android:id="@+id/seapedia"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEAPEDIA"
+        android:textSize="35dp"
+        android:textColor="@color/WhiteText"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_pantai"
+        android:text="List Pantai Daerah Malang Selatan"
+        android:textSize="20dp"
+        android:textColor="@color/WhiteText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/seapedia"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_pantai_malang"
+        android:layout_below="@+id/list_pantai"
+        android:layout_above="@id/btnCari"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/btnCari"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Cari Pantai"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:textColor="@color/WhiteText"/>
+
+</RelativeLayout>

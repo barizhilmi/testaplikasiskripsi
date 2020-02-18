@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-500dp"
+        app:srcCompat="@drawable/bgtop1" />
+
+    <TextView
+        android:id="@+id/seapedia"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEAPEDIA"
+        android:textSize="35dp"
+        android:textColor="@color/WhiteText"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_pantai"
+        android:text="Masukkan Kriteria Pantai Yang Diinginkan"
+        android:textSize="20dp"
+        android:textColor="@color/WhiteText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/seapedia"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/list_pantai">
+
+        <TextView
+            android:id="@+id/textView_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User 1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:hint="Fasilitas"
+            android:id="@+id/textView_fasilitas"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:hint="Rating"
+            android:id="@+id/textView_rating"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:hint="Harga"
+            android:id="@+id/textView_harga"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:hint="Jarak"
+            android:id="@+id/textView_jarak"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:hint="Transportasi"
+            android:id="@+id/textView_transportasi"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTambahUser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Tambah User"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:textColor="@color/WhiteText" />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Cari Pantai"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btnTambahUser"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:textColor="@color/WhiteText"/>
+
+</RelativeLayout>
