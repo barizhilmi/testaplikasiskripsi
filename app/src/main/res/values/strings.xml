@@ -2,4 +2,7 @@
     <string name="app_name">Cari Pantai</string>
     <string name="title_activity_map">Map</string>
     <string name="temukan_pantai_sesuai_kelompok">Temukan pantai destinasi wisata yang sesuai dengan rombonganmu!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

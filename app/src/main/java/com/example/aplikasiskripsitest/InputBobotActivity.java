@@ -15,9 +15,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class InputBobotActivity extends AppCompatActivity implements InputDialog.InputDialogListener {
+public class InputBobotActivity extends AppCompatActivity  {
 
-    private TextView textViewHarga, textViewFasilitas, textViewRating, textViewJarak, textViewTransportasi;
+    TextView textViewHarga, textViewFasilitas, textViewRating, textViewJarak, textViewTransportasi;
     private Button showDialog;
 
     @Override
@@ -38,21 +38,15 @@ public class InputBobotActivity extends AppCompatActivity implements InputDialog
                 showDialog();
             }
         });
+
+
     }
 
     private void showDialog() {
-        InputDialog inputDialog = new InputDialog();
-        inputDialog.show(getSupportFragmentManager(),"Input Bobot User ");
+        InputDialogFragement inputDialogFragement = new InputDialogFragement();
+        inputDialogFragement.show(getSupportFragmentManager(),"Input Dialog");
 
     }
 
-    @Override
-    public void applyTexts(String fasilitas, String rating, String jarak, String harga, String transportasi) {
-        textViewFasilitas.setText(fasilitas);
-        textViewRating.setText(rating);
-        textViewJarak.setText(jarak);
-        textViewHarga.setText(harga);
-        textViewTransportasi.setText(transportasi);
-    }
 
 }
